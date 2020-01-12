@@ -34,6 +34,7 @@ public class WordCount extends Configured implements Tool {
         job.setMapperClass(WordCountMapper.class);
         job.setMapOutputKeyClass(Text.class);
         job.setMapOutputValueClass(IntWritable.class);
+        //job.setNumReduceTasks(1);//这是默认的,ReduceTasks默认1
 
         //shuffle
 
