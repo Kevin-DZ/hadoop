@@ -18,7 +18,7 @@ import java.io.IOException;
 
 /**
  *
- * 实现join
+ * 实现join 大的数据join大的数据，比较效率低
  *
  */
 public class ReduceJoin extends Configured implements Tool {

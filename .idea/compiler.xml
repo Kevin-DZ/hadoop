@@ -9,6 +9,7 @@
         <module name="day5" />
         <module name="day4" />
         <module name="day3" />
+        <module name="day6" />
       </profile>
     </annotationProcessing>
   </component>
