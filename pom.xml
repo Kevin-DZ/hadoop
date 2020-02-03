@@ -12,6 +12,7 @@
         <module>day4</module>
         <module>day5</module>
         <module>day6</module>
+        <module>fuxi1</module>
     </modules>
     <packaging>pom</packaging>
 
