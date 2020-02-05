@@ -14,11 +14,10 @@ import org.apache.hadoop.util.Tool;
 import org.apache.hadoop.util.ToolRunner;
 
 import java.io.IOException;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 /*
-    统计搜狗 uv
+    统计搜狗 top10
  */
 
 public class MRTop10 extends Configured implements Tool {
@@ -35,7 +34,7 @@ public class MRTop10 extends Configured implements Tool {
          * 构建一个job
          */
         //创建一个job的实例
-        Job job = Job.getInstance(this.getConf(), "mruv");
+        Job job = Job.getInstance(this.getConf(), "MRTop10");
 
 
         //设置job运行的类
@@ -51,7 +50,7 @@ public class MRTop10 extends Configured implements Tool {
         //map：定义Map阶段的类及输出类型
         job.setMapperClass(MRModelMapper.class);
         job.setMapOutputKeyClass(Text.class);
-        job.setMapOutputValueClass(Text.class);
+        job.setMapOutputValueClass(IntWritable.class);
         //shuffle：定义shuffle阶段实现的类
 
         //reduce：定义reduce阶段的类及输出类型
@@ -61,7 +60,7 @@ public class MRTop10 extends Configured implements Tool {
         job.setNumReduceTasks(1);//设置Reduce的个数，就是分区的个数
 
         //output：定义输出的类以及输出的路径
-        Path outputPath = new Path("datas/out/sougou/uv");
+        Path outputPath = new Path("datas/out/sougou/top10");
         //如果输出存在，就删除
         FileSystem hdfs = FileSystem.get(this.getConf());
         if (hdfs.exists(outputPath)) {
@@ -94,16 +93,23 @@ public class MRTop10 extends Configured implements Tool {
     /**
      * 定义Mapper的实现类以及Map过程中的处理逻辑
      */
-    public static class MRModelMapper extends Mapper<LongWritable, Text, Text, Text> {
+    public static class MRModelMapper extends Mapper<LongWritable, Text, Text, IntWritable> {
         private Text outputKey = new Text();
-        private Text outputValue = new Text();
+        private IntWritable outputValue =  new IntWritable(1);
 
+        /**
+         * 将每条数据的搜索词作为key，value恒为1
+         * @param key
+         * @param value
+         * @param context
+         * @throws IOException
+         * @throws InterruptedException
+         */
         @Override
         protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
             String[] split = value.toString().split("\t");
-            String hours = split[0].substring(0, 2);
-            outputKey.set(hours);
-            outputValue.set(split[1]);
+            //将搜索词作为key
+            outputKey.set(split[2]);
             context.write(outputKey,outputValue);
         }
     }
@@ -111,28 +117,64 @@ public class MRTop10 extends Configured implements Tool {
     /**
      * 定义Reducer的实现类以及Reduce过程中的处理逻辑
      */
-    public static class MRModelReduce extends Reducer<Text, Text, Text, IntWritable> {
-        private IntWritable outputValue = new IntWritable();
+    public static class MRModelReduce extends Reducer<Text, IntWritable, Text, IntWritable> {
+        //在全局定义TreeMap，用于在reduce方法 中赋值，在cleanup方法中输出,默认按照key的升序排序
+        TreeMap<Integer,String> top10 = new TreeMap<>(new Comparator<Integer>() {
+            @Override
+            public int compare(Integer o1, Integer o2) {
+                return o2 - o1; //表示降序
+            }
+        });
 
-        Set<String> sets = new HashSet<>();
+        private Text outputKey = new Text();
+        private IntWritable outputValue =  new IntWritable();
+
+        @Override
+        protected void reduce(Text key, Iterable<IntWritable> values, Context context) throws IOException, InterruptedException {
+            //将当前搜索词的次数进行统计
+            int sum  = 0;
+            for (IntWritable value : values) {
+                sum += value.get();
+            }
+
+            if (top10.size() < 10){
+                //小于10,直接放
+                if (top10.get(sum) != null){
+                    //不为null.表示该个数已经存在
+                    top10.put(sum,top10.get(sum) + "\t" + key.toString());
+                }else {
+                    //该个数不存在,直接放入
+                    top10.put(sum,key.toString());
+                }
+            }else {//表示当前元素不小于10,插入以后,将最小的移除
+                if (top10.get(sum) != null){
+                    top10.put(sum,top10.get(sum) + "\t"+ key.toString());
+                }else {
+                    top10.put(sum,key.toString());
+                    top10.remove(top10.lastKey());//删除最小的
+                }
+            }
+        }
+
         /**
-         *
-         * @param key 每个小时
-         * @param values 这个小时的所有用户
+         * 用于将reduce赋值的TreeMap中的数据进行输出
          * @param context
          * @throws IOException
          * @throws InterruptedException
          */
         @Override
-        protected void reduce(Text key, Iterable<Text> values, Context context) throws IOException, InterruptedException {
-            sets.clear();
-            //将这个小时的所有用户id放入set集合自动去重
-            for (Text value : values) {
-                sets.add(value.toString());
+        protected void cleanup(Context context) throws IOException, InterruptedException {
+            for (Map.Entry<Integer,String> map:top10.entrySet()) {
+                //获取前10名的次数，就是key
+                Integer outValue = map.getKey();
+                outputValue.set(outValue);
+                //获取前10名的搜索词，就是map中的value,因为相同次数的搜索词拼接了 ，这时候分割以后输出
+                String[] outputKeys = map.getValue().split("\t");
+                for (String outKey : outputKeys) {
+                    outputKey.set(outKey);
+                    context.write(outputKey,outputValue);
+                }
             }
-            outputValue.set(sets.size());
-
-            context.write(key, outputValue);
         }
     }
 }
