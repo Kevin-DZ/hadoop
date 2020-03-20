@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34f691e7-7e8d-45c2-8509-1bbbf47fea18" name="Default Changelist" comment="默认reduceTask">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lianxi0214/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lianxi0214/src/main/java/com/lianxi/LianXiModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lianxi0214/src/main/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fuxi1/src/main/java/MRTop10.java" beforeDir="false" afterPath="$PROJECT_DIR$/fuxi1/src/main/java/MRTop10.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fuxi1/target/classes/META-INF/fuxi1.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hadoop.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -15,6 +16,7 @@
     <ignored path="$PROJECT_DIR$/day5/target/" />
     <ignored path="$PROJECT_DIR$/day6/target/" />
     <ignored path="$PROJECT_DIR$/fuxi1/target/" />
+    <ignored path="$PROJECT_DIR$/lianxi0214/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +27,7 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -56,7 +58,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/day4/pom.xml" />
         <option value="$PROJECT_DIR$/day3/pom.xml" />
         <option value="$PROJECT_DIR$/day3/src/main/java/com/day3/WordCountMapper.java" />
@@ -104,6 +105,9 @@
         <option value="$PROJECT_DIR$/fuxi1/src/main/java/MRPV.java" />
         <option value="$PROJECT_DIR$/fuxi1/src/main/java/MRUV.java" />
         <option value="$PROJECT_DIR$/fuxi1/src/main/java/MRTop10.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/lianxi0214/src/main/java/com/lianxi/MRModel.java" />
+        <option value="$PROJECT_DIR$/lianxi0214/src/main/java/com/lianxi/LianXiModel.java" />
       </list>
     </option>
   </component>
@@ -127,16 +131,11 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="hadoop" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="lianxi0214" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="hadoop" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="hadoop" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="lianxi0214" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
         </path>
       </expand>
@@ -147,8 +146,8 @@
     <option name="vmOptions" value="-DarchetypeCatalog=internal -Dfile.encoding=UTF-8" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="559" />
-    <option name="y" value="27" />
+    <option name="x" value="119" />
+    <option name="y" value="33" />
     <option name="width" value="1360" />
     <option name="height" value="982" />
   </component>
@@ -160,6 +159,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -167,63 +167,10 @@
               <item name="hadoop" type="b2602c69:ProjectViewProjectNode" />
               <item name="hadoop" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="hadoop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hadoop" type="462c0819:PsiDirectoryNode" />
-              <item name="datas" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hadoop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hadoop" type="462c0819:PsiDirectoryNode" />
-              <item name="datas" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hadoop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hadoop" type="462c0819:PsiDirectoryNode" />
-              <item name="datas" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="sougou" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hadoop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hadoop" type="462c0819:PsiDirectoryNode" />
-              <item name="datas" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="sougou" type="462c0819:PsiDirectoryNode" />
-              <item name="top10" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hadoop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hadoop" type="462c0819:PsiDirectoryNode" />
-              <item name="fuxi1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hadoop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hadoop" type="462c0819:PsiDirectoryNode" />
-              <item name="fuxi1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hadoop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hadoop" type="462c0819:PsiDirectoryNode" />
-              <item name="fuxi1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hadoop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hadoop" type="462c0819:PsiDirectoryNode" />
-              <item name="fuxi1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -240,7 +187,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -251,18 +198,18 @@
       <recent name="com.day3" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.lianxi" />
       <recent name="" />
       <recent name="com.day6.TopSogou" />
       <recent name="com.day6.TopSougou" />
       <recent name="com.day6" />
-      <recent name="com.day5" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\github\hadoop\lianxi0214\src\main\resources" />
       <recent name="E:\myCode\Hadoop\hadoop\fuxi1\src\main\resources" />
       <recent name="E:\myCode\Hadoop\hadoop\fuxi1\src\main\java" />
       <recent name="E:\myCode\Hadoop\hadoop\day5\src\main\java\com\day5" />
       <recent name="E:\myCode\Hadoop\hadoop\day6\src\main\resources" />
-      <recent name="E:\myCode\Hadoop\hadoop\day5\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -277,7 +224,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MRTop10">
+  <component name="RunManager" selected="Application.LianXiModel">
+    <configuration name="LianXiModel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lianxi.LianXiModel" />
+      <module name="lianxi0214" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lianxi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MRPV" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MRPV" />
       <module name="fuxi1" />
@@ -299,19 +259,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderTopNMR" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.day6.OrderTopNMR" />
-      <module name="day6" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.day6.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SogouTopNMR" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.day6.TopSogou.SogouTopNMR" />
       <module name="day6" />
@@ -327,11 +274,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LianXiModel" />
         <item itemvalue="Application.MRTop10" />
         <item itemvalue="Application.MRUV" />
         <item itemvalue="Application.MRPV" />
         <item itemvalue="Application.SogouTopNMR" />
-        <item itemvalue="Application.OrderTopNMR" />
       </list>
     </recent_temporary>
   </component>
@@ -357,6 +304,12 @@
       <workItem from="1580733090176" duration="605000" />
       <workItem from="1580733791227" duration="64000" />
       <workItem from="1580885650559" duration="3274000" />
+      <workItem from="1580988718551" duration="257000" />
+      <workItem from="1581680298856" duration="2027000" />
+      <workItem from="1581682346637" duration="1555000" />
+      <workItem from="1581683925413" duration="3751000" />
+      <workItem from="1581934601279" duration="667000" />
+      <workItem from="1582803071885" duration="215000" />
     </task>
     <task id="LOCAL-00001" summary="默认reduceTask">
       <created>1578837925350</created>
@@ -369,12 +322,48 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48619000" />
+    <option name="totallyTimeSpent" value="57091000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="559" y="27" width="1360" height="982" extended-state="0" />
+    <frame x="119" y="33" width="1360" height="982" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20692308" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2423077" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="JRebel" order="3" side_tool="true" />
+      <window_info id="Image Layers" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="UI Designer" order="6" />
+      <window_info id="Favorites" order="7" side_tool="true" />
+      <window_info id="Hadoop FileSystem" order="8" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49920633" weight="0.27915195" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.45612136" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.329718" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50079364" side_tool="true" weight="0.41170096" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3286334" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.7592191" />
+      <window_info anchor="bottom" id="JRebel Executor" order="14" />
+      <window_info anchor="bottom" id="JRebel Console" order="15" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.2675906" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15991472" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" side_tool="true" />
@@ -402,13 +391,13 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.32995737" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.2675906" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -417,30 +406,19 @@
     <MESSAGE value="默认reduceTask" />
     <option name="LAST_COMMIT_MESSAGE" value="默认reduceTask" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/fuxi1/src/main/java/MRTop10.java</url>
+          <line>110</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="jar://E:/Program Files/repository/org/apache/hadoop/hadoop-common/2.6.0/hadoop-common-2.6.0.jar!/org/apache/hadoop/conf/Configuration.class" />
-    <entry file="file://$PROJECT_DIR$/day3/src/main/java/com/day3/WordCount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day3/src/main/java/com/day3/partition/UserPartitioner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day6/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/datas/out/reduceJoin/part-r-00000" />
-    <entry file="file://$PROJECT_DIR$/datas/out/mapjoin/part-m-00000" />
     <entry file="file://$PROJECT_DIR$/day5/src/main/java/com/day5/mysql/DBReader.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -503,20 +481,6 @@
       </provider>
     </entry>
     <entry file="jar://E:/Program Files/repository/org/apache/hadoop/hadoop-mapreduce-client-core/2.6.0/hadoop-mapreduce-client-core-2.6.0-sources.jar!/org/apache/hadoop/mapred/MapTask.java" />
-    <entry file="file://$PROJECT_DIR$/fuxi1/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="18" lean-forward="true" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day6/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="57" column="19" selection-start-line="57" selection-start-column="19" selection-end-line="57" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/day6/src/main/java/com/day6/partiton/OrderPartition.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -615,13 +579,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/datas/out/hotkey/part-r-00000" />
-    <entry file="file://$PROJECT_DIR$/day3/src/main/java/com/day3/model/MRModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="79" column="5" selection-start-line="79" selection-start-column="5" selection-end-line="79" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/day5/src/main/java/com/day5/HotKey.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="892">
@@ -670,28 +627,82 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fuxi1/src/main/java/MRPV.java">
+    <entry file="file://$PROJECT_DIR$/day3/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="33" column="18" lean-forward="true" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
+        <state relative-caret-position="510">
+          <caret line="30" column="23" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fuxi1/src/main/java/MRUV.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="32" column="13" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+        <state relative-caret-position="547">
+          <caret line="64" column="16" selection-start-line="64" selection-start-column="9" selection-end-line="64" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day3/src/main/java/com/day3/model/MRModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="23" column="24" lean-forward="true" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lianxi0214/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fuxi1/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="71">
+          <caret line="31" column="17" lean-forward="true" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day6/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="537">
+          <caret line="57" column="19" selection-start-line="57" selection-start-column="19" selection-end-line="57" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fuxi1/src/main/java/MRPV.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="104" column="54" lean-forward="true" selection-start-line="104" selection-start-column="54" selection-end-line="104" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lianxi0214/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datas/out/guanxi/part-r-00000">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lianxi0214/src/main/java/com/lianxi/LianXiModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1105">
+          <caret line="65" column="11" lean-forward="true" selection-start-line="65" selection-start-column="11" selection-end-line="65" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fuxi1/src/main/java/MRTop10.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="101" column="21" lean-forward="true" selection-start-line="101" selection-start-column="21" selection-end-line="101" selection-end-column="21" />
-          <folding>
-            <element signature="e#3788#3789#0" expanded="true" />
-            <element signature="e#3837#3838#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1938">
+          <caret line="132" column="60" selection-start-line="132" selection-start-column="49" selection-end-line="132" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fuxi1/src/main/java/MRUV.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1955">
+          <caret line="133" column="41" selection-start-line="133" selection-start-column="41" selection-end-line="133" selection-end-column="41" />
         </state>
       </provider>
     </entry>
