@@ -33,7 +33,7 @@
     </repositories>
 
     <properties>
-        <hadoop.version>2.6.0</hadoop.version>
+        <hadoop.version>2.7.0</hadoop.version>
     </properties>
 
     <dependencies>
